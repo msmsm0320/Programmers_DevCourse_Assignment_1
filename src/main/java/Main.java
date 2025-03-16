@@ -10,11 +10,16 @@ public class Main {
         while(sc.hasNextLine()){
             String input = sc.nextLine();
 
-            if(input.equals("exit") || input.equals("종료")){
-                System.out.println("프로그램이 종료됩니다.");
-                break;
-            } else{
-                System.out.println("존재하지 않는 명령어 입니다.");
+            switch(input){
+                case "작성" :
+                    new post(){};
+                    break;
+                case "조회" :
+                    break;
+                case "삭제" :
+                    break;
+                case "수정" :
+                    break;
             }
             System.out.print("명령어 > ");
         }
