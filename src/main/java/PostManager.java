@@ -17,6 +17,9 @@ public class PostManager {
             if(input.equals("exit")||input.equals("종료")) {break;}
 
             switch (input) {
+                case "exit":
+                case "종료" :
+                    System.out.println("프로그램이 종료됩니다.");
                 case "작성":
                     System.out.println("작성할 게시물의 제목을 입력해주세요.");
                     String title = sc.nextLine();
