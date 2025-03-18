@@ -30,4 +30,13 @@ public class Post {
         this.content = content;
     }
 
+    public int getId(){
+        return (int) id;
+    }
+
+    public static int getcountId(){
+        return (int) countId;
+    }
+
+
 }
