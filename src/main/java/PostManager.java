@@ -14,7 +14,6 @@ public class PostManager {
         while (true) {
             System.out.println("명령어 > ");
             String input = sc.nextLine();
-            if(input.equals("exit")||input.equals("종료")) {break;}
 
             switch (input) {
                 case "exit":
