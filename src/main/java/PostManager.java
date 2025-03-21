@@ -10,8 +10,8 @@ public class PostManager {
     public void operate() {
 
         Scanner sc = new Scanner(System.in);
-
-        while (true) {
+        boolean act = true;
+        while (act) {
             System.out.println("명령어 > ");
             String input = sc.nextLine();
 
@@ -19,6 +19,7 @@ public class PostManager {
                 case "exit":
                 case "종료" :
                     System.out.println("프로그램이 종료됩니다.");
+                    act = false;
                 case "작성":
                     System.out.println("작성할 게시물의 제목을 입력해주세요.");
                     String title = sc.nextLine();
